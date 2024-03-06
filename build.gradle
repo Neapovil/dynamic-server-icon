@@ -1,0 +1,26 @@
+plugins {
+  id "java-library"
+  id "io.papermc.paperweight.userdev" version "1.5.11"
+  id "xyz.jpenilla.run-paper" version "2.2.2"
+}
+
+version = "1.19.4"
+group = "com.github.neapovil.dynamicservericon"
+
+compileJava.options.encoding = "UTF-8"
+compileJava.options.release = 17
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  paperweight.paperDevBundle("1.19.4-R0.1-SNAPSHOT")
+}
+
+tasks {
+  runServer {
+    minecraftVersion("1.19.4")
+  }
+}
