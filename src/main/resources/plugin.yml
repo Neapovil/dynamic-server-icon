@@ -1,6 +1,11 @@
 name: DynamicServerIcon
-main: com.github.neapovil.servericon.DynamicServerIcon
+main: com.github.neapovil.dynamicservericon.DynamicServerIcon
 version: 1.0.0
 api-version: 1.19
 author: Neapovil
 website: https://github.com/Neapovil/dynamic-server-icon
+depend:
+  - CommandAPI
+permissions:
+  dynamicservericon.command:
+    default: op
